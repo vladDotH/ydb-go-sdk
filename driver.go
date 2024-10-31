@@ -91,7 +91,7 @@ type Driver struct {
 	topic        *xsync.Once[*topicclientinternal.Client]
 	topicOptions []topicoptions.TopicOption
 
-	databaseSQLOptions []xsql.ConnectorOption
+	databaseSQLOptions []xsql.Option
 
 	pool *conn.Pool
 
